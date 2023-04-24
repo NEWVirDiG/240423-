@@ -1,0 +1,134 @@
+﻿<Window x:Class="WpfLR2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLR2"
+        mc:Ignorable="d"
+        Title="Лабораторная работа №2" d:DesignHeight="550" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Left"
+                    Width="400">
+            
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите X1"
+                           Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputX1"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+            
+            
+            
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите X2"
+                           Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputX2"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите X3"
+                          Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputX3"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите X4"
+                           Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputX4"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Width="400">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите Y1"
+                           Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputY1"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+
+
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите Y2"
+                           Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputY2"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите Y3"
+                          Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputY3"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Left">
+                <TextBlock Text="Введите Y4"
+                           Style="{StaticResource StyleTextBlock}"/>
+                <TextBox Name="TxtInputY4"
+                         Width="150"
+                           Height="30"
+                           Margin="5" FontSize="16"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Vertical"
+                    VerticalAlignment="Center">
+            <TextBlock Text="Результат выполнения программы:"
+                       Width="200"
+                       Margin="5"/>
+            <ListBox Name="LstResult"
+                     Width="400"
+                     Height="200" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button  
+                Content="Выполнить"
+                Style="{StaticResource StyleSolveButton}"
+                Name="BtnSolve"
+                Click="BtnSolve_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
